@@ -1,56 +1,143 @@
-const express = require('express');
+// server.js
+
 const mysql = require('mysql2');
-const cors = require('cors');
-
-const app = express();
-const port = 3000;
-
-// 创建与数据库的连接池
-const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'a1156416877',
-  database: 'javaweb',
-  waitForConnections: true,
-  connectionLimit: 10,
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '1234',
+    database: 'test'
 });
 
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// 处理登录请求的路由
-app.post('/login', (req, res) => {
-  const { username, password } = req.body;
-
-  // 从连接池获取连接
-  pool.getConnection((err, connection) => {
+connection.connect(function(err){
     if (err) {
-      throw err;
+        console.error('error connecting: ' + err.stack);
+        return;
     }
-
-    // 查询数据库中是否存在匹配的账户
-    const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
-    connection.query(query, (err, results) => {
-      // 释放连接回连接池
-      connection.release();
-
-      if (err) {
-        console.log('数据库连接失败');
-        throw err;
-      }
-
-      // 检查结果是否存在匹配的账户
-      if (results.length > 0) {
-        res.json({ success: true, message: '登录成功' });
-      } else {
-        res.json({ success: false, message: '用户名或密码错误' });
-      }
+    console.log("Connected to MySQL database");
+    
+    // 创建users表
+    connection.query(`CREATE TABLE IF NOT EXISTS users (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        username VARCHAR(255) NOT NULL UNIQUE,
+        password VARCHAR(255) NOT NULL
+    );`, function(error, results, fields) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log('Users table created successfully');
     });
-  });
 });
 
-// 启动服务器
-app.listen(3000, () => {
-  console.log('服务器已启动，监听端口 3000');
-});
+
+// function register(username, password) {
+//     let query = `INSERT INTO users (username, password) VALUES ('${username}', '${password}')`;
+
+//     connection.query(query, function(error, results, fields) {
+//         if (error) {
+//             console.error(error);
+//             return false;
+//         }
+//         console.log("User registered successfully");
+//         return true;
+//     });
+// }
+
+
+// function login(username, password) {
+//     let query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
+
+//     connection.query(query, function(error, results, fields) {
+//         if (error) {
+//             console.error(error);
+//             return false;
+//         }
+//         if (results.length > 0) {
+//             console.log("User found");
+//             return true;
+//         }
+//         console.log("User not found");
+//         return false;
+//     });
+// }
+
+// function register(username, password) {
+//     let query = `INSERT INTO users (username, password) VALUES ('${username}', '${password}')`;
+
+//     return new Promise(function(resolve, reject) {
+//         connection.query(query, function(error, results, fields) {
+//             if (error) {
+//                 console.error(error);
+//                 reject(false);
+//             } else {
+//                 console.log("User registered successfully");
+//                 resolve(true);
+//             }
+//         });
+//     });
+// }
+
+
+function register(username, password) {
+    let queryCheck = `SELECT * FROM users WHERE username = '${username}'`;
+    let queryInsert = `INSERT INTO users (username, password) VALUES ('${username}', '${password}')`;
+
+    return new Promise(function(resolve, reject) {
+        connection.query(queryCheck, function(error, results, fields) {
+            if (error) {
+                console.error(error);
+                reject(false);
+            } else if (results.length > 0) {
+                console.log("User already exists");
+                resolve(false);
+            } else {
+                connection.query(queryInsert, function(error, results, fields) {
+                    if (error) {
+                        console.error(error);
+                        reject(false);
+                    } else {
+                        console.log("User registered successfully");
+                        resolve(true);
+                    }
+                });
+            }
+        });
+    });
+}
+
+
+
+
+
+
+
+
+function login(username, password) {
+    let query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
+
+    return new Promise(function(resolve, reject) {
+        connection.query(query, function(error, results, fields) {
+            if (error) {
+                console.error(error);
+                reject(false);
+            } else if (results.length > 0) {
+                console.log("User found");
+                resolve(true);
+            } else {
+                console.log("User not found");
+                resolve(false);
+            }
+        });
+    });
+}
+
+
+
+
+
+
+
+module.exports = {
+    register,
+    login
+};
