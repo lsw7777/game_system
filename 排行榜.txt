@@ -970,7 +970,7 @@
 986,极速骑行4,RIDE 4,8.5,竞速摩托车,2020-10-06,85,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/img/e055a28056f7331d6030cb6bf4ed67b7/e055a28056f7331d6030cb6bf4ed67b7.jpg
 965,魔界战记5,DISGAEA 5,未显示,角色扮演传统RPG,2015-09-15,89,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/img/fa016a107ea264a3d9a6686bb7498dff/fa016a107ea264a3d9a6686bb7498dff.png
 987,长途客车模拟,Fernbus Simulator,6.1,策略经营模拟,2016-08-24,85,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/6955d73a23593f3b215abf23cb17f1cb.jpeg
-966,"1, 2 BLAME!","1, 2 BLAME!",未显示,休闲其它,2021-05-13,89,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/889b7553ff77e9cae69e8c21f896cb7d.jpeg
+966,"1_2_BLAME!","1_2_BLAME!",未显示,休闲其它,2021-05-13,89,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/889b7553ff77e9cae69e8c21f896cb7d.jpeg
 988,月华剑士2,10.0,动作格斗,未显示发布时间,85,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/67dc8677c70052a0cdab99d5c961c7a3.jpeg
 967,MIRAGE,MIRAGE,未显示,策略经营模拟,2018-06-20,89,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/7dc0dcfb4c1eb8b8f8821c8227478a7e.jpeg
 989,猫咪斗恶龙2,Cat Quest II,未显示,角色扮演传统RPG,2019-09-23,85,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/7493b75accf5cb434b0ee72b4026e104.jpeg
@@ -7131,7 +7131,7 @@
 7131,祭献灯塔,Sacrificial Lighthouse,未显示,益智观察,未显示发布时间,1,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/82a092b28feb14579d1e87723e890be7.jpeg
 7132,Worms Pinball,未显示,独立游戏,2011-10-18,1,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/d1d0bd0b4c08e8c43a300b5c1fcc8c26.jpeg
 7133,Painting Werther,未显示,休闲其它,2021-12-07,1,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/777a676ef3ad62c317ab05b41fbc299c.jpeg
-7134,"one night, hot springs",未显示,独立游戏,2018-08-29,1,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/c1a022efc41a0d0e3995aca29265eed2.jpeg
+7134,"one night hot springs",未显示,独立游戏,2018-08-29,1,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/c1a022efc41a0d0e3995aca29265eed2.jpeg
 7135,自由机器人：自由网络之战,Freebot : Battle for FreeWeb,未显示,射击枪械,2018-06-17,1,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/35d0ecc17c2828010b92ec995e306992.jpeg
 7136,Wormster Dash,未显示,独立游戏,2018-09-30,1,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/1e9fc894ceaf1298d0b5f665d8592460.jpeg
 7137,钢炮齐发,Steel Salvo,未显示,射击枪械,2021-04-06,1,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/33a16d897ab189b114e9c3925d369aaa.jpeg
@@ -9766,7 +9766,7 @@
 9786,萌宠大赢家,Blooming Business: Casino,未显示,策略经营模拟,未显示发布时间,0,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/7611256d297a19e405e121b1d34805d5.jpeg
 9787,Orbiterrion,Orbiterrion,未显示,动作其它,未显示发布时间,0,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/892700dfdbe6e401754c2adb7600c35e.jpeg
 9788,月球洞穴,Moon Caves,未显示,射击飞机,2021-02-03,0,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/3a8186abec5fbf85c89e68c7c88bf27d.jpeg
-9761,iBLiS,iBLiS,未显示,益智观察,2021-04-15,0,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/7a0a4a1c7754564c009dea700a045a39.jpeg
+9761,iBLiS2,iBLiS2,未显示,益智观察,2021-04-15,0,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/7a0a4a1c7754564c009dea700a045a39.jpeg
 9789,Miguelshroom,Miguelshroom,未显示,休闲其它,2021-04-14,0,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/9c79e7fa9847073f5cf1bef49e14cee0.jpeg
 9762,警长的狂怒,Sheriff Rage,未显示,射击枪械,2021-04-02,0,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/b4e54e16d7c4329129961610413e19c6.jpeg
 9790,飞天壶,Space Kettle,未显示,益智灵敏,2021-02-06,0,https://gameplus-platform.cdn.bcebos.com/gameplus-platform/upload/file/source/5fe0ac26d1f0e4e6af01dddb84882681.jpeg
